@@ -1,43 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { CarShowcase } from "./CarShowcase"; // make sure this path is correct
 import "../components/back.css";
 
 export const Projects = () => {
-  const projects = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Movie website",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Cosmetic Website",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      // title: "Business Startup",
-      // description: "Design & Development",
-      // imgUrl: projImg2,
-    },
-    {
-      // title: "Business Startup",
-      // description: "Design & Development",
-      // imgUrl: projImg3,
-    },
-  ];
-
   return (
     <section className="project" id="project">
       <Container>
@@ -45,11 +14,7 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
                   <p>
                     In my portfolio, I showcase notable web development projects
@@ -79,18 +44,15 @@ export const Projects = () => {
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
+                      className={isVisible ? "animate__animated animate__slideInUp" : ""}
                     >
+                      {/* Replace projects images with CarShowcase */}
                       <Tab.Pane eventKey="first">
-                        <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
-                        </Row>
+                        <CarShowcase />
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
+
+                      {/* Tab 2 content */}
+                      <Tab.Pane eventKey="second">
                         <p>
                           In my portfolio, I showcase notable web development
                           projects, including a fully functional e-commerce
@@ -109,14 +71,20 @@ export const Projects = () => {
                           applications.
                         </p>
                       </Tab.Pane>
+
+                      {/* Tab 3 content */}
                       <Tab.Pane eventKey="third">
                         <p>
-                          For more details, please check out my Git hub{" "}
-                          <a href="https://github.com/Muhammad Noor">
+                          For more details, please check out my GitHub{" "}
+                          <a
+                            href="https://github.com/MuhammadNoor"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <img
                               src={navIcon3}
-                              className="w-{80} h-{80}"
-                              alt="Git hub"
+                              style={{ width: "80px", height: "80px" }}
+                              alt="GitHub"
                             />
                           </a>
                         </p>
@@ -129,7 +97,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right " src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="background" />
     </section>
   );
 };
