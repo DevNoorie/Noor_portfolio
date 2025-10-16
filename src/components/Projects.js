@@ -22,7 +22,7 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: Carshowcase,
       github: "https://github.com/DevNoorie",
-      website: "https://v0-car-dealership-page.vercel.app/",
+      website: "https://car-dealership-page.vercel.app/",
  
     },
     // {
