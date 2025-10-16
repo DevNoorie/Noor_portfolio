@@ -21,7 +21,9 @@ export const Projects = () => {
       title: "Carshowroom Website",
       description: "Design & Development",
       imgUrl: Carshowcase,
-      github: "https://github.com/DevNoorie/Carshowroom",
+      github: "https://github.com/DevNoorie",
+      website: "https://v0-car-dealership-page.vercel.app/",
+ 
     },
     // {
     //   title: "Business Startup",
@@ -100,7 +102,7 @@ export const Projects = () => {
                                 <h5 className="mt-2">{project.title}</h5>
                                 <p>{project.description}</p>
                                 <a
-                                  href={project.github}
+                                  href={project.website}
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="btn btn-primary mt-2"
