@@ -12,17 +12,17 @@ export const Footer = () => {
         <Row className="align-items-center">
           <MailchimpForm />
           <Col size={12} sm={6}>
-            <p className="text-white  font-bold text-6xl ">Made with ❤️ </p>
+            <p className="text-white  font-bold text-6xl "> </p>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/Muhammad Noor-303330247/">
+              <a href="https://www.linkedin.com/in/MuhammadNoor-303330247/">
                 <img src={navIcon1} alt="Icon" />
               </a>
-              <a href="https://web.facebook.com/Muhammad Noor.900">
+              {/* <a href="https://web.facebook.com/MuhammadNoor.900">
                 <img src={navIcon2} alt="Icon" />
-              </a>
-              <a href="https://github.com/Muhammad Noor">
+              </a> */}
+              <a href="https://github.com/DevNoorie">
                 <img src={navIcon3} alt="Icon" />
               </a>
             </div>

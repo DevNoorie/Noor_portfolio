@@ -75,13 +75,13 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/Muhammad Noor-303330247/">
+                <a href="https://www.linkedin.com/in/MuhammadNoor-303330247/">
                   <img src={navIcon1} alt="" />
                 </a>
-                <a href="https://web.facebook.com/Muhammad Noor.900">
+                {/* <a href="https://web.facebook.com/MuhammadNoor.900">
                   <img src={navIcon2} alt="" />
-                </a>
-                <a href="https://github.com/Muhammad Noor">
+                </a> */}
+                <a href="https://github.com/DevNoorie">
                   <img src={navIcon3} alt="Git hub" />
                 </a>
               </div>
