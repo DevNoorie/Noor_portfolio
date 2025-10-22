@@ -85,11 +85,19 @@ export const NavBar = () => {
                   <img src={navIcon3} alt="Git hub" />
                 </a>
               </div>
-              <HashLink to="#connect">
-                <button className="vvd">
-                  <span>Let’s Connect</span>
-                </button>
-              </HashLink>
+              <button
+              className="vvd"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/Muhammad_Noor_Abrahams_CV.pdf';
+                link.download = 'Muhammad_Noor_Abrahams_CV.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                }}
+                >
+                  <span>Download CV</span>
+                  </button>
             </span>
           </Navbar.Collapse>
         </Container>

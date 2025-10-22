@@ -53,7 +53,7 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>
+                  {/* <p>
                     In my portfolio, I showcase notable web development
                     projects including a fully functional e-commerce website
                     (HTML, CSS, JavaScript), a weather app (React.js), a task
@@ -62,7 +62,7 @@ export const Projects = () => {
                     app (React.js, API). These projects exemplify my expertise
                     in web development, demonstrating my ability to create
                     engaging and functional applications.
-                  </p>
+                  </p> */}
 
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav

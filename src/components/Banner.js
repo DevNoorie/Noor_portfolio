@@ -75,15 +75,13 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p className=" text-sm">
-                    As a front-end developer, I build responsive websites for
-                    clients. Passionate about user-friendly web experiences.
-                    Stay updated with web development trends. Mentor aspiring
-                    developers. Excited about future opportunities in this
-                    field.
+                    I design and develop responsive, user-focused websites that combine functionality with modern aesthetics.
+                    Passionate about crafting seamless digital experiences, I stay up to date with emerging web technologies and enjoy mentoring aspiring developers.
+                    Driven by curiosity and innovation, I’m always exploring new ways to elevate the web experience.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  {/* <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  </button> */}
                 </div>
               )}
             </TrackVisibility>
