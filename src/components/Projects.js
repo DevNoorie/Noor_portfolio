@@ -5,25 +5,26 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import Carshowcase from "../assets/img/carshow.png";
+import druckersa from "../assets/img/druckersa.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import "../components/back.css";
 
 export const Projects = () => {
   const projects = [
-    // {
-    //   title: "Carshowroom Website",
-    //   description: "Design & Development",
-    //   imgUrl: Carshowcase,
-    //   github: "https://github.com/DevNoorie/Carshowroom",
-    // },
     {
-      title: "Carshowroom Website",
+      title: "Druckersa Website",
+      description: "Design & Development",
+      imgUrl: druckersa,
+      github: "https://github.com/DevNoorie",
+      website: "https://www.druckersa.co.za/",
+    },
+    {
+      title: "Car showroom Website",
       description: "Design & Development",
       imgUrl: Carshowcase,
       github: "https://github.com/DevNoorie",
       website: "https://car-dealership-page.vercel.app/",
- 
     },
     // {
     //   title: "Business Startup",
